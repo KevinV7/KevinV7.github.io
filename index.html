@@ -2,42 +2,216 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Giovanni Bocanegra - Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon/devicon.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Valladares - Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <header>
-        <div class="container">
-            <h1><span>Oscar Giovanni Bocanegra</span></h1>
-            <p>Data Engineer | AI Specialist | Solutions Architect</p>
-            <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#sobre-mi">Sobre Mí</a>
-                <a href="#contacto">Contacto</a>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- HEADER -->
+    <header class="bg-gray-800 p-4 shadow-md">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-bold text-blue-400">Kevin Arnaldo Valladares Sanchez</h1>
+                <p class="text-sm text-gray-300">| Programador |</p>
+            </div>
+            <nav class="space-x-4">
+                <a href="#inicio" class="text-gray-300 hover:text-white">Inicio</a>
+                <a href="#sobre-mi" class="text-gray-300 hover:text-white">Sobre Mí</a>
+                <a href="#contacto" class="text-gray-300 hover:text-white">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Construyendo el Futuro con Datos e Inteligencia Artificial</h2>
-            <p>Experto en diseñar soluciones escalables de ingeniería de datos e IA para desafíos empresariales.</p>
-            <a href="#contacto" class="btn">Contáctame</a>
-            <div class="skills">
-                <span>🐍 Python</span>
-                <span>🛠️ AWS</span>
-                <span>🧮 SQL</span>
-                <span>🐳 Docker</span>
-                <span>🧠 ML/AI</span>
+    <!-- HERO -->
+    <section class="text-center py-20 px-6" id="inicio">
+        <h2 class="text-4xl font-bold text-white mb-4">Desarrollar y mejorar software</h2>
+        <p class="text-gray-300 max-w-2xl mx-auto">
+            Experto en plantear soluciones eficientes en el ámbito del desarrollo de softwarre
+        </p>
+        <a href="#contacto"
+            class="mt-6 inline-block bg-blue-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">
+            Contáctame
+        </a>
+        <div class="flex justify-center gap-3 mt-6 flex-wrap">
+            <span class="bg-gray-800 px-4 py-1 rounded-full text-sm">🐍 HTML</span>
+            <span class="bg-gray-800 px-4 py-1 rounded-full text-sm">☁️ CSS</span>
+            <span class="bg-gray-800 px-4 py-1 rounded-full text-sm">☁️ JavaScript</span>
+            <span class="bg-gray-800 px-4 py-1 rounded-full text-sm">🧮 SQL Server</span>
+            <span class="bg-gray-800 px-4 py-1 rounded-full text-sm">VisualBasic.net</span>
+            <span class="bg-gray-800 px-4 py-1 rounded-full text-sm">Git & Github</span>
+        </div>
+    </section>
+
+    <!-- ÁREAS DE ESPECIALIZACIÓN -->
+    <section class="bg-gray-800 py-16 px-6" id="especializacion">
+        <h2 class="text-center text-3xl font-semibold text-blue-400 mb-12">Áreas de Especialización</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-blue-300 mb-4">📊 Data Engineering</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm">
+                    <li>Arquitecturas de datos escalables</li>
+                    <li>ETL/ELT y pipelines</li>
+                    <li>Data Lakes & Warehouses</li>
+                    <li>Procesamiento en tiempo real (Kafka, Spark)</li>
+                    <li>Modelado de datos</li>
+                </ul>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-blue-300 mb-4">🧠 Inteligencia Artificial</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm">
+                    <li>Machine Learning y Deep Learning</li>
+                    <li>NLP y lenguaje natural</li>
+                    <li>Modelos predictivos</li>
+                    <li>MLOps y despliegue</li>
+                    <li>Computer Vision</li>
+                </ul>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-blue-300 mb-4">☁️ Cloud & DevOps</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-300 text-sm">
+                    <li>Arquitecturas en la nube (AWS, Azure, GCP)</li>
+                    <li>Contenerización (Docker, K8s)</li>
+                    <li>CI/CD & IaC</li>
+                    <li>Gobernanza y seguridad de datos</li>
+                    <li>Optimización de costos</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Aquí agregarás más secciones como Especialización y Stack -->
+    <!-- STACK TECNOLÓGICO -->
+    <section class="py-16 px-6 bg-gray-900" id="stack">
+        <h2 class="text-center text-3xl font-semibold text-blue-400 mb-12">Stack Tecnológico</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <!-- Frontend-->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Frontend</h3>
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-sm text-gray-300">HTML</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[95%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-300">CSS</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[90%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-300">JavaScript</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[70%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-300">React</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[60%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Backend</h3>
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-sm text-gray-300">Node.js</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[85%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-300">VisualBasic.net</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[80%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-300">C#</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[75%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otras Tecnologias -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Otras Tecnologias</h3>
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-sm text-gray-300">SQL Server</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[80%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-300">Git & Github</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[75%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-sm text-gray-300">Bash</span>
+                        <div class="w-full bg-gray-700 h-2 rounded-full">
+                            <div class="bg-blue-400 h-2 rounded-full w-[65%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="py-16 px-6 bg-gray-800" id="sobre-mi">
+        <h2 class="text-center text-3xl font-semibold text-blue-400 mb-12">Sobre Mí</h2>
+        <div class="max-w-4xl mx-auto text-gray-300 space-y-6">
+            <p>
+                Soy un apasionado del desarrollo de software con más de 5 años de experiencia en la creación de
+                aplicaciones web y móviles. Me encanta resolver problemas complejos y siempre estoy buscando aprender
+                nuevas tecnologías.
+            </p>
+            <p>
+                Actualmente, me especializo en el desarrollo de aplicaciones utilizando tecnologías modernas como React,
+                Node.js y Python. También tengo experiencia en bases de datos SQL y NoSQL, así como en la implementación
+                de APIs RESTful.
+            </p>
+            <p>
+                En mi tiempo libre, disfruto contribuir a proyectos de código abierto y participar en hackatones. Creo
+                firmemente que la colaboración y el aprendizaje continuo son clave para crecer como desarrollador.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="py-16 px-6 bg-gray-900" id="contacto">
+        <h2 class="text-center text-3xl font-semibold text-blue-400 mb-12">Contacto</h2>
+        <form class="max-w-md mx-auto space-y-6">
+            <div>
+                <label for="nombre" class="block text-sm font-medium text-gray-300">Nombre</label>
+                <input type="text" id="nombre" name="nombre"
+                    class="mt-1 block w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 text-white focus:ring-blue-500 focus:border-blue-500"
+                    required />
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                <input type="email" id="email" name="email"
+                    class="mt-1 block w-full bg-gray-800 border border-gray-700 rounded-md py-2 px-3 text-white focus:ring-blue-500 focus:border-blue-500"
+                    required />
+            </div>
+            <div>
+                <label for="mensaje" class="block
 
 </body>
 
